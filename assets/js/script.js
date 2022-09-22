@@ -46,9 +46,11 @@ function checkResult(resultOne, resultTwo) {
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
-    playerWin();
+    playerWin(playerScore);
 }
 
 function playerWin(playerScore) {
-
+    if (playerScore === 3) {
+        alert('You Win!');
+    }
 }
