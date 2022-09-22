@@ -32,6 +32,12 @@ function checkResult(resultOne, resultTwo) {
     || resultOne === 'paper' && resultTwo === 'rock'
     || resultOne === 'scissors' && resultTwo === 'paper') {
         messages.innerText = 'Nice!';
+    } else if (resultOne === 'rock' && resultTwo === 'paper'
+    || resultOne === 'paper' && resultTwo === 'scissors'
+    || resultOne === 'scissors' && resultTwo === 'rock') {
+        messages.innerText = 'Ouch!';
+    } else {
+        messages.innerText = 'Almost';
     }
 
 }
