@@ -2,7 +2,8 @@
 const buttons = document.getElementsByClassName('controls');
 const playerImage = document.getElementById('player-image');
 const computerImage = document.getElementById('computer-image');
-const choicesArray = ['rock', 'paper', 'scissors']
+const choicesArray = ['rock', 'paper', 'scissors'];
+const messages = document.getElementById('messages');
 
 //Button Event Listener
 for (let button of buttons) {
@@ -27,5 +28,10 @@ function runGame(playerChoice) {
 }
 
 function checkResult(resultOne, resultTwo) {
-    
+    if (resultOne === 'rock' && resultTwo === 'scissors'
+    || resultOne === 'paper' && resultTwo === 'rock'
+    || resultOne === 'scissors' && resultTwo === 'paper') {
+        messages.innertext = 'Nice!';
+    }
+
 }
