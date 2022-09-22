@@ -17,4 +17,8 @@ function runGame(playerChoice) {
     let computerChoice = Math.floor(Math.random() * 3);
     computerImage.src = `../assets/images/${choicesArray[computerChoice]}.jpg`;
     computerImage.alt = choicesArray[computerChoice];
+
+    let resultOne = choices[playerChoice];
+    let resultTwo = choices[computerChoice];
+    checkResult(resultOne, resultTwo);
 }
