@@ -13,10 +13,13 @@ h1 {
 .controls-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 0.5rem;
 }
 
 .controls-area > button {
+    font-size: 1.5rem;
+    margin: 0.5rem;
     align-items: center;
 
 }
