@@ -38,6 +38,7 @@ function checkResult(resultOne, resultTwo) {
     } else if (resultOne === 'rock' && resultTwo === 'paper'
     || resultOne === 'paper' && resultTwo === 'scissors'
     || resultOne === 'scissors' && resultTwo === 'rock') {
+        incrementComputerScore();
         messages.innerText = 'Ouch!';
     } else {
         messages.innerText = 'Almost';
@@ -53,7 +54,7 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
-    console.log(computerScore);
+    playerLose(computerScore);
 }
 // if the players score gets to 3 it triggers an alert
 function playerWin(playerScore) {
