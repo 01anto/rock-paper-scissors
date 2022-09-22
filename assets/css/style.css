@@ -9,3 +9,8 @@ h1 {
     text-align: center;
     color:gold;
 }
+
+.controls-area {
+    display: flex;
+    flex-wrap: wrap;
+}
