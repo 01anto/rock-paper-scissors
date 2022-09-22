@@ -26,7 +26,7 @@ function runGame(playerChoice) {
     let resultTwo = choicesArray[computerChoice];
     checkResult(resultOne, resultTwo);
 }
-
+// compares results to game rules and adjusts messages text accordingly
 function checkResult(resultOne, resultTwo) {
     if (resultOne === 'rock' && resultTwo === 'scissors'
     || resultOne === 'paper' && resultTwo === 'rock'
