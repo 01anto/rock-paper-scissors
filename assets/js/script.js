@@ -12,6 +12,5 @@ for (let button of buttons) {
 
 function runGame(playerChoice) {
     playerImage.src = `../assets/images/${choicesArray[playerChoice]}.jpg`;
-    alert(playerImage.src);
 
 }
