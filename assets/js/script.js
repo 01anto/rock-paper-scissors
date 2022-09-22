@@ -48,7 +48,7 @@ function incrementPlayerScore() {
     document.getElementById("player-score").innerText = ++playerScore;
     playerWin(playerScore);
 }
-
+// if the players score gets to 3 it triggers an alert
 function playerWin(playerScore) {
     if (playerScore === 3) {
         alert('You Win!');
