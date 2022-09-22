@@ -55,3 +55,8 @@ img {
     width: 80%;
     height: auto;
 }
+
+.image-area {
+    display: flex;
+    justify-content: center;
+}
