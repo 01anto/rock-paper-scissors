@@ -5,6 +5,7 @@ const computerImage = document.getElementById('computer-image');
 const choicesArray = ['rock', 'paper', 'scissors'];
 const messages = document.getElementById('messages');
 const playerScore = document.getElementById('player-score');
+const computerScore = document.getElementById('computer-score');
 
 //Button Event Listener
 for (let button of buttons) {
@@ -47,6 +48,12 @@ function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
     playerWin(playerScore);
+
+// gets the computers current score and increments it
+function incrementComputerScore() {
+    let computerScore = parseInt(document.getElementById('computer-score').innerText);
+    document.getElementById("computer-score").innerText = ++computerScore;
+    console.log(computerScore);
 }
 // if the players score gets to 3 it triggers an alert
 function playerWin(playerScore) {
