@@ -21,7 +21,11 @@ function runGame(playerChoice) {
     computerImage.src = `../assets/images/${choicesArray[computerChoice]}.jpg`;
     computerImage.alt = choicesArray[computerChoice];
 
-    let resultOne = choices[playerChoice];
-    let resultTwo = choices[computerChoice];
+    let resultOne = choicesArray[playerChoice];
+    let resultTwo = choicesArray[computerChoice];
     checkResult(resultOne, resultTwo);
+}
+
+function checkResult(resultOne, resultTwo) {
+    
 }
