@@ -4,6 +4,7 @@ const playerImage = document.getElementById('player-image');
 const computerImage = document.getElementById('computer-image');
 const choicesArray = ['rock', 'paper', 'scissors'];
 const messages = document.getElementById('messages');
+const playerScore = document.getElementById('player-score');
 
 //Button Event Listener
 for (let button of buttons) {
@@ -31,6 +32,7 @@ function checkResult(resultOne, resultTwo) {
     if (resultOne === 'rock' && resultTwo === 'scissors'
     || resultOne === 'paper' && resultTwo === 'rock'
     || resultOne === 'scissors' && resultTwo === 'paper') {
+        incrementPlayerScore();
         messages.innerText = 'Nice!';
     } else if (resultOne === 'rock' && resultTwo === 'paper'
     || resultOne === 'paper' && resultTwo === 'scissors'
@@ -39,5 +41,10 @@ function checkResult(resultOne, resultTwo) {
     } else {
         messages.innerText = 'Almost';
     }
+}
 
+function incrementPlayerScore() {
+    let playerScore = parseInt(document.getElementById('player-score').innerText);
+    document.getElementById("player-score").innerText = ++playerScore;
+    console.log(playerScore);
 }
