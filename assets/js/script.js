@@ -31,7 +31,7 @@ function checkResult(resultOne, resultTwo) {
     if (resultOne === 'rock' && resultTwo === 'scissors'
     || resultOne === 'paper' && resultTwo === 'rock'
     || resultOne === 'scissors' && resultTwo === 'paper') {
-        messages.innertext = 'Nice!';
+        messages.innerText = 'Nice!';
     }
 
 }
