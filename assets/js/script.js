@@ -48,7 +48,7 @@ function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
     playerWin(playerScore);
-
+}
 // gets the computers current score and increments it
 function incrementComputerScore() {
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
