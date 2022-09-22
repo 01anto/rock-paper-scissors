@@ -61,3 +61,9 @@ function playerWin(playerScore) {
         alert('You Win!');
     }
 }
+// if the computers score gets to 3 it triggers an alert
+function playerLose(computerScore) {
+    if (computerScore === 3) {
+        alert('You Lose!');
+    }
+}
