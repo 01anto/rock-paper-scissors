@@ -1,4 +1,7 @@
 const buttons = document.getElementsByClassName('controls');
+const playerImage = document.getElementById('player-image');
+const computerImage = document.getElementById('computer-image');
+const choicesArray = ['rock', 'paper', 'scissors']
 
 for (let button of buttons) {
     button.addEventListener('click', function() {
@@ -8,5 +11,5 @@ for (let button of buttons) {
 }
 
 function runGame(playerChoice) {
-    
+
 }
