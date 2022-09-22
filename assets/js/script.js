@@ -13,6 +13,8 @@ for (let button of buttons) {
 function runGame(playerChoice) {
     playerImage.src = `../assets/images/${choicesArray[playerChoice]}.jpg`;
     playerImage.alt = choicesArray[playerChoice];
+
     let computerChoice = Math.floor(Math.random() * 3);
-    console.log(computerChoice);
+    computerImage.src = `../assets/images/${choicesArray[computerChoice]}.jpg`;
+    computerImage.alt = choicesArray[computerChoice];
 }
