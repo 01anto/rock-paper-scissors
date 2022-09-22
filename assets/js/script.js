@@ -42,9 +42,8 @@ function checkResult(resultOne, resultTwo) {
         messages.innerText = 'Almost';
     }
 }
-
+// gets the players current score and increments it
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
-    console.log(playerScore);
 }
