@@ -46,4 +46,9 @@ function checkResult(resultOne, resultTwo) {
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
+    playerWin();
+}
+
+function playerWin(playerScore) {
+
 }
