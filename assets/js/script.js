@@ -14,6 +14,11 @@ function openModal() {
     modal.style.visibility = "visible";
 }
 
+window.onclick = function(event) {
+    if (event.target == modal)
+    modal.style.visibility = "hidden";
+}
+
 //Button Event Listener
 for (let button of buttons) {
     button.addEventListener('click', function() {
