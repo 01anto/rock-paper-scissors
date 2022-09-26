@@ -13,7 +13,7 @@ const modalMessage = document.getElementById("modal-message");
 function openModal() {
     modal.style.visibility = "visible";
 }
-
+// changes modal visibility to hidden when user clicks on modal background
 window.onclick = function(event) {
     if (event.target == modal)
     modal.style.visibility = "hidden";
