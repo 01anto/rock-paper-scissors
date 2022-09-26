@@ -12,6 +12,7 @@
     justify-content: center;
     position: fixed;
     align-items: center;
+    visibility: hidden;
 }
 
 .modal-content {
