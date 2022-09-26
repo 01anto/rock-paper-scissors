@@ -74,6 +74,8 @@ function playerWin(playerScore) {
 // if the computers score gets to 3 it triggers an alert
 function playerLose(computerScore) {
     if (computerScore === 3) {
-        
+        heading.innerText = "You Lose...";
+        modalMessage.innerText = "Better luck next time"
+        openModal();
     }
 }
