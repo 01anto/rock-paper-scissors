@@ -8,6 +8,10 @@ const playerScore = document.getElementById('player-score');
 const computerScore = document.getElementById('computer-score');
 const modal = document.getElementById("myModal");
 
+function openModal() {
+    
+}
+
 //Button Event Listener
 for (let button of buttons) {
     button.addEventListener('click', function() {
