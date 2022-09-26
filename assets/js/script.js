@@ -6,6 +6,7 @@ const choicesArray = ['rock', 'paper', 'scissors'];
 const messages = document.getElementById('messages');
 const playerScore = document.getElementById('player-score');
 const computerScore = document.getElementById('computer-score');
+const modal = document.getElementById("myModal");
 
 //Button Event Listener
 for (let button of buttons) {
