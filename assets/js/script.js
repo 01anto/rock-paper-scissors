@@ -66,7 +66,6 @@ function incrementComputerScore() {
 // if the players score gets to 3 it triggers an alert
 function playerWin(playerScore) {
     if (playerScore === 3) {
-        alert('You Win!');
         heading.innerText = "You Win!";
         modalMessage.innerText = "Well Done"
         openModal();
