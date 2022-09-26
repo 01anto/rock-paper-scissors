@@ -9,7 +9,7 @@ const computerScore = document.getElementById('computer-score');
 const modal = document.getElementById("myModal");
 
 function openModal() {
-    
+    modal.style.visibility = "visible";
 }
 
 //Button Event Listener
@@ -65,6 +65,7 @@ function incrementComputerScore() {
 function playerWin(playerScore) {
     if (playerScore === 3) {
         alert('You Win!');
+        openModal();
     }
 }
 // if the computers score gets to 3 it triggers an alert
