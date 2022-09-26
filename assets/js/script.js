@@ -7,6 +7,8 @@ const messages = document.getElementById('messages');
 const playerScore = document.getElementById('player-score');
 const computerScore = document.getElementById('computer-score');
 const modal = document.getElementById("myModal");
+const heading = document.getElementById("modal-heading");
+const modalMessage = document.getElementById("modal-message");
 
 function openModal() {
     modal.style.visibility = "visible";
@@ -65,6 +67,8 @@ function incrementComputerScore() {
 function playerWin(playerScore) {
     if (playerScore === 3) {
         alert('You Win!');
+        heading.innerText = "You Win!";
+        modalMessage.innerText = "Well Done"
         openModal();
     }
 }
