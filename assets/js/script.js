@@ -10,6 +10,7 @@ const modal = document.getElementById("myModal");
 const heading = document.getElementById("modal-heading");
 const modalMessage = document.getElementById("modal-message");
 
+// changes modal visibility to visible when called
 function openModal() {
     modal.style.visibility = "visible";
 }
