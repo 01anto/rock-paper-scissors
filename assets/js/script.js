@@ -63,7 +63,7 @@ function incrementComputerScore() {
     document.getElementById("computer-score").innerText = ++computerScore;
     playerLose(computerScore);
 }
-// if the players score gets to 3 it triggers an alert
+// if the players wins it changes modal content and calls the openModal function
 function playerWin(playerScore) {
     if (playerScore === 3) {
         heading.innerText = "You Win!";
