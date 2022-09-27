@@ -56,6 +56,10 @@ button {
     border: 0.1875rem solid gold;
     border-radius: 0.3125rem;
     padding: 0.25rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px rgba(0,0,0,0.5),
+    2px 3px rgba(0,0,0,0.5),
+    2px 4px 4px rgba(0,0,0,0.5);
 }
 
 .controls-area {
