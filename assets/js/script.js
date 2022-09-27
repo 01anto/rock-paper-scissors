@@ -63,6 +63,7 @@ function checkResult(resultOne, resultTwo) {
         messages.innerText = 'Ouch!';
     } else {
         messages.innerText = 'Almost';
+        audioDraw();
     }
 }
 // gets the players current score and increments it
