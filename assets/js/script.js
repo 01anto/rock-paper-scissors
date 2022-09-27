@@ -81,7 +81,8 @@ function incrementComputerScore() {
 function playerWin(playerScore) {
     if (playerScore === 3) {
         heading.innerText = "You Win!";
-        modalMessage.innerText = "Well Done"
+        modalMessage.innerText = "Well Done";
+        audioWin();
         openModal();
     }
 }
@@ -89,7 +90,13 @@ function playerWin(playerScore) {
 function playerLose(computerScore) {
     if (computerScore === 3) {
         heading.innerText = "You Lose...";
-        modalMessage.innerText = "Better luck next time"
+        modalMessage.innerText = "Better luck next time";
         openModal();
     }
+}
+
+function audioWin() {
+    const audio = new Audio('../assets/audio/win.mp3');
+    audio.loop = false;
+    audio.play();
 }
