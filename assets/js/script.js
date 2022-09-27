@@ -17,8 +17,10 @@ function openModal() {
 }
 // changes modal visibility to hidden when user clicks on modal background
 window.onclick = function(event) {
-    if (event.target == modal)
+    if (event.target == modal) {
     modal.style.visibility = "hidden";
+    window.location.reload();
+    }
 }
 // changes modal visibility to hidden when user clicks on modal close span
 span.onclick = function() {
