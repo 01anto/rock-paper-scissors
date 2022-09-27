@@ -9,6 +9,7 @@ const computerScore = document.getElementById('computer-score');
 const modal = document.getElementById("myModal");
 const heading = document.getElementById("modal-heading");
 const modalMessage = document.getElementById("modal-message");
+const span = document.getElementsByClassName("close");
 
 // changes modal visibility to visible when called
 function openModal() {
