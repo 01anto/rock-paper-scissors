@@ -91,6 +91,7 @@ function playerLose(computerScore) {
     if (computerScore === 3) {
         heading.innerText = "You Lose...";
         modalMessage.innerText = "Better luck next time";
+        audioLose();
         openModal();
     }
 }
