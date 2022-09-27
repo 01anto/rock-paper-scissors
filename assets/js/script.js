@@ -122,7 +122,7 @@ function audioIncorrect() {
     audio.loop = false;
     audio.play();
 }
-// audio that is played when the players hand and computers hand are the same
+// audio that is played when the players hand and computers hand are the same (Draw)
 function audioDraw() {
     const audio = new Audio('../assets/audio/draw.oga');
     audio.loop = false;
