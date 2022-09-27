@@ -95,13 +95,13 @@ function playerLose(computerScore) {
         openModal();
     }
 }
-
+// audio that is played when the player wins
 function audioWin() {
     const audio = new Audio('../assets/audio/win.mp3');
     audio.loop = false;
     audio.play();
 }
-
+// audio that is played when the player loses
 function audioLose() {
     const audio = new Audio('../assets/audio/lose.mp3');
     audio.loop = false;
