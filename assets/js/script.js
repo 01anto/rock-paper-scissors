@@ -100,3 +100,9 @@ function audioWin() {
     audio.loop = false;
     audio.play();
 }
+
+function audioLose() {
+    const audio = new Audio('../assets/audio/lose.mp3');
+    audio.loop = false;
+    audio.play();
+}
