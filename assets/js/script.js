@@ -76,6 +76,7 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
+    audioIncorrect();
     playerLose(computerScore);
 }
 // if the players wins it changes modal content and calls the openModal function
