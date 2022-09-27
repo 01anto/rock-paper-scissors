@@ -20,7 +20,7 @@ window.onclick = function(event) {
     if (event.target == modal)
     modal.style.visibility = "hidden";
 }
-
+// changes modal visibility to hidden when user clicks on modal close span
 span.onclick = function() {
     modal.style.visibility = "hidden";
 }
