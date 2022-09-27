@@ -9,7 +9,7 @@ const computerScore = document.getElementById('computer-score');
 const modal = document.getElementById("myModal");
 const heading = document.getElementById("modal-heading");
 const modalMessage = document.getElementById("modal-message");
-const span = document.getElementsByClassName("close");
+const span = document.getElementById("close");
 
 // changes modal visibility to visible when called
 function openModal() {
@@ -18,6 +18,10 @@ function openModal() {
 // changes modal visibility to hidden when user clicks on modal background
 window.onclick = function(event) {
     if (event.target == modal)
+    modal.style.visibility = "hidden";
+}
+
+span.onclick = function() {
     modal.style.visibility = "hidden";
 }
 
