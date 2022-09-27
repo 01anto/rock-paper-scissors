@@ -101,6 +101,12 @@ function audioWin() {
     audio.loop = false;
     audio.play();
 }
+// audio that is played when the players hand beats the computers hand
+function audioCorrect() {
+    const audio = new Audio('../assets/audio/correct.mp3');
+    audio.loop = false;
+    audio.play();
+}
 // audio that is played when the player loses
 function audioLose() {
     const audio = new Audio('../assets/audio/lose.mp3');
