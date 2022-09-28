@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#toggle-name {
+    color: white;
+}
+
 /*Modal background*/
 .modal {
     width: 100%;
