@@ -38,11 +38,11 @@ for (let button of buttons) {
 
 //Main Game Function
 function runGame(playerChoice) {
-    playerImage.src = `../assets/images/${choicesArray[playerChoice]}.jpg`;
+    playerImage.src = `assets/images/${choicesArray[playerChoice]}.jpg`;
     playerImage.alt = choicesArray[playerChoice];
 
     let computerChoice = Math.floor(Math.random() * 3);
-    computerImage.src = `../assets/images/${choicesArray[computerChoice]}.jpg`;
+    computerImage.src = `assets/images/${choicesArray[computerChoice]}.jpg`;
     computerImage.alt = choicesArray[computerChoice];
 
     let resultOne = choicesArray[playerChoice];
