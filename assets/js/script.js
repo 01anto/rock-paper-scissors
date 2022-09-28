@@ -56,17 +56,17 @@ function runGame(playerChoice) {
  isAudio is checked */
 function checkResult(resultOne, resultTwo) {
     console.log("is checked: ", isAudio.checked);
-    if (resultOne === 'rock' && resultTwo === 'scissors'
-    || resultOne === 'paper' && resultTwo === 'rock'
-    || resultOne === 'scissors' && resultTwo === 'paper') {
+    if (resultOne === 'rock' && resultTwo === 'scissors'||
+    resultOne === 'paper' && resultTwo === 'rock'||
+    resultOne === 'scissors' && resultTwo === 'paper') {
         incrementPlayerScore();
         messages.innerText = 'Nice!';
         if (isAudio.checked) {
             audioCorrect();
         }
-    } else if (resultOne === 'rock' && resultTwo === 'paper'
-    || resultOne === 'paper' && resultTwo === 'scissors'
-    || resultOne === 'scissors' && resultTwo === 'rock') {
+    } else if (resultOne === 'rock' && resultTwo === 'paper'||
+    resultOne === 'paper' && resultTwo === 'scissors'||
+    resultOne === 'scissors' && resultTwo === 'rock') {
         incrementComputerScore();
         messages.innerText = 'Ouch!';
         if (isAudio.checked) {
