@@ -114,7 +114,7 @@ button:active {
 }
 
 #score-two {
-    
+
 }
 
 #messages {
@@ -133,4 +133,10 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+    .score-area {
+        flex-direction: row;
+    }
 }
