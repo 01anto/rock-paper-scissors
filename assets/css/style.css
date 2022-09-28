@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Modal background*/
 .modal {
     width: 100%;
     height: 100%;
@@ -15,7 +15,7 @@
     visibility: hidden;
     top: 0;
 }
-
+/*Main modal content*/
 .modal-content {
     width: 80%;
     padding: 1.25rem;
@@ -24,7 +24,7 @@
     border: 0.1875rem solid gold;
     border-radius: 0.3125rem;
 }
-
+/*modal close span*/
 #close {
     color: white;
     font-size: 2rem;;
@@ -34,17 +34,17 @@
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
-
+/*modal close span hover and active effects*/
 #close:hover, #close:active {
     color: orange;
     cursor: pointer;
 }
-
+/*Main website background colour*/
 body {
     background-color: rgb(81,117,162);
 }
 
-
+/*website heading and modal heading styles*/
 h1, #modal-heading {
     font-size: 3rem;
     text-align: center;
@@ -53,7 +53,7 @@ h1, #modal-heading {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
-
+/*All website button styles*/
 button {
     color: white;
     background-color: darkorange;
@@ -79,21 +79,21 @@ button:active {
     text-shadow: none;
     box-shadow: none;
 }
-
+/*controls area container for rock, paper, scissors buttons*/
 .controls-area {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0.5rem;
 }
-
+/*Specific styles for rock, paper, scissors buttons */
 .controls-area > button {
     font-size: 1.5rem;
     margin: 0.5rem;
     align-items: center;
 
 }
-
+/*score area container for player and computer scores*/
 .score-area {
     font-size: 2rem;
     display: flex;
@@ -103,7 +103,7 @@ button:active {
     margin-top: 0.5rem;
     gap: 0.5rem;
 }
-
+/**/
 .scores, #modal-message {
     color: white;
     text-align: center;
