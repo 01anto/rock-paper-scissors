@@ -15,14 +15,14 @@ const span = document.getElementById("close");
 function openModal() {
     modal.style.visibility = "visible";
 }
-// changes modal visibility to hidden when user clicks on modal background
+// changes modal visibility to hidden and reloads the page when user clicks on modal background
 window.onclick = function(event) {
     if (event.target == modal) {
     modal.style.visibility = "hidden";
     window.location.reload();
     }
 }
-// changes modal visibility to hidden when user clicks on modal close span
+// changes modal visibility to hidden and reloads the page when user clicks on modal close span
 span.onclick = function() {
     modal.style.visibility = "hidden";
     window.location.reload();
@@ -49,7 +49,9 @@ function runGame(playerChoice) {
     let resultTwo = choicesArray[computerChoice];
     checkResult(resultOne, resultTwo);
 }
-// compares results to game rules and adjusts messages text accordingly
+/* compares results to game rules, adjusts messages text accordingly,
+ calls an increment player or computer score function and an audio function if  
+ isAudio is checked */
 function checkResult(resultOne, resultTwo) {
     const isAudio = document.querySelector("#isAudio");
     console.log("is checked: ", isAudio.checked);
