@@ -58,6 +58,7 @@ function checkResult(resultOne, resultTwo) {
     || resultOne === 'scissors' && resultTwo === 'paper') {
         incrementPlayerScore();
         messages.innerText = 'Nice!';
+        audioCorrect();
     } else if (resultOne === 'rock' && resultTwo === 'paper'
     || resultOne === 'paper' && resultTwo === 'scissors'
     || resultOne === 'scissors' && resultTwo === 'rock') {
@@ -72,7 +73,6 @@ function checkResult(resultOne, resultTwo) {
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
-    audioCorrect();
     playerWin(playerScore);
 }
 // gets the computers current score and increments it
