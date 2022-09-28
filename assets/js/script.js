@@ -58,7 +58,9 @@ function checkResult(resultOne, resultTwo) {
     || resultOne === 'scissors' && resultTwo === 'paper') {
         incrementPlayerScore();
         messages.innerText = 'Nice!';
-        audioCorrect();
+        if (isAudio.checked) {
+            audioCorrect();
+        }
     } else if (resultOne === 'rock' && resultTwo === 'paper'
     || resultOne === 'paper' && resultTwo === 'scissors'
     || resultOne === 'scissors' && resultTwo === 'rock') {
