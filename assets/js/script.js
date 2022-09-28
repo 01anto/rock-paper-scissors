@@ -112,31 +112,31 @@ function playerLose(computerScore) {
 }
 // audio that is played when the player wins
 function audioWin() {
-    const audio = new Audio('../assets/audio/win.mp3');
+    const audio = new Audio('assets/audio/win.mp3');
     audio.loop = false;
     audio.play();
 }
 // audio that is played when the players hand beats the computers hand
 function audioCorrect() {
-    const audio = new Audio('../assets/audio/correct.mp3');
+    const audio = new Audio('assets/audio/correct.mp3');
     audio.loop = false;
     audio.play();
 }
 // audio that is played when the player loses
 function audioLose() {
-    const audio = new Audio('../assets/audio/lose.mp3');
+    const audio = new Audio('assets/audio/lose.mp3');
     audio.loop = false;
     audio.play();
 }
 // audio that is played when the computers hand beats the players hand
 function audioIncorrect() {
-    const audio = new Audio('../assets/audio/wrong.mp3');
+    const audio = new Audio('assets/audio/wrong.mp3');
     audio.loop = false;
     audio.play();
 }
 // audio that is played when the players hand and computers hand are the same (Draw)
 function audioDraw() {
-    const audio = new Audio('../assets/audio/draw.oga');
+    const audio = new Audio('assets/audio/draw.oga');
     audio.loop = false;
     audio.play();
 }
