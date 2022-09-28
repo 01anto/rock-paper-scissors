@@ -9,6 +9,7 @@
     <title>Rock. Paper. Scissors.</title>
 </head>
 <body>
+    <!--modal-->
     <div id="myModal" class="modal">
         <div class ="modal-content">
             <span id="close">&times;</span>
@@ -16,9 +17,10 @@
             <h3 id="modal-message"></h3>
         </div>
     </div>
+    <!--Main heading-->
     <header>
         <h1>Rock. Paper. Scissors.</h1>
-         <!--https://www.w3schools.com/howto/howto_css_switch.asp-->
+         <!--Audio toggle switch, https://www.w3schools.com/howto/howto_css_switch.asp-->
          <div class="switch-container">
             <label class="switch">
                 <input type="checkbox" id="isAudio">
@@ -26,12 +28,15 @@
             </label>
         </div>
     </header>
+    <!--Main game section-->
     <section class="game-area">
+        <!--Main game controls-->
         <div class="controls-area">
             <button class="controls" aria-label="rock" data-index="0">Rock</button>
             <button class="controls" aria-label="paper" data-index="1">Paper</button>
             <button class="controls" aria-label="scissors" data-index="2">Scissors</button>
         </div>
+        <!--player and computer scores-->
         <div class="score-area">
             <h3 class="scores" id="score-one">Player: <span id="player-score">0</span></h3>
             <h3 class="scores" id="score-two">Computer: <span id="computer-score">0</span></h3>
@@ -39,20 +44,25 @@
         <div id="messages">
             <p>Your Move!</p>
         </div>
+        <!--image container-->
         <div class="image-area">
+            <!--player image-->
             <div class="player">
                 <img id="player-image" src="assets/images/rock-paper-scissors.png" alt="Rock, Paper, Scissors">
             </div>
+            <!--computer image-->
             <div class="computer">
                 <img id="computer-image" src="assets/images/rock-paper-scissors.png" alt="Rock, Paper, Scissors">
             </div>
         </div>
     </section>
+    <!--footer social links-->
     <footer>
         <a href="https://www.facebook.com" aria-label="Go to facebook website" title="Facebook Link" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://www.youtube.com" aria-label="Go to youtube website" title="Youtube Link" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.instagram.com" aria-label="Go to instagram website" title="Instagram Link" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
     </footer>
+    <!--javascript link-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
