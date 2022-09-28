@@ -149,4 +149,8 @@ img {
     .score-area {
         flex-direction: row;
     }
+
+    .image-area {
+        flex-direction: row;
+    }
 }
