@@ -163,10 +163,16 @@ footer {
 
 footer > a {
     font-size: 2rem;
-    color: gold;
+    color: orange;
     text-shadow:2px 2px rgba(0,0,0,0.5),
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
+}
+
+footer > a:hover {
+    text-shadow:2px 2px rgba(255,255,255,0.5),
+    2px 3px rgba(255,255,255,0.5),
+    2px 4px 4px rgba(255,255,255,0.5);
 }
 
 @media screen and (min-width: 425px) {
