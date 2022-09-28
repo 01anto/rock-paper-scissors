@@ -133,6 +133,7 @@ button:active {
 /*image container div*/
 .image-area {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     margin-top: 0.5rem;
@@ -141,12 +142,6 @@ button:active {
 img {
     max-width: 76%;
     height: auto;
-}
-
-.image-area {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 .switch-container {
