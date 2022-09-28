@@ -135,7 +135,7 @@ button:active {
 }
 
 img {
-    width: 80%;
+    max-width: 76%;
     height: auto;
 }
 
