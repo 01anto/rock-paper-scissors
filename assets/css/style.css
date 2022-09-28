@@ -250,6 +250,22 @@ footer > a:hover {
 }
 
 @media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .controls-area > button {
+        font-size: 2rem;
+    }
+
+    .scores {
+        font-size: 2rem;
+    }
+
+    #messages {
+        font-size: 2rem;
+    }
+
     img {
         width: 100%;
     }
