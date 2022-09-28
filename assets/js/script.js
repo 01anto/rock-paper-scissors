@@ -21,20 +21,20 @@ window.onclick = function(event) {
     modal.style.visibility = "hidden";
     window.location.reload();
     }
-}
+};
 
 // changes modal visibility to hidden and reloads the page when user clicks on modal close span
 span.onclick = function() {
     modal.style.visibility = "hidden";
     window.location.reload();
-}
+};
 
 //Button Event Listener
 for (let button of buttons) {
     button.addEventListener('click', function() {
         let playerChoice = this.getAttribute('data-index');
         runGame(playerChoice);
-    })
+    });
 }
 
 //Main Game Function
