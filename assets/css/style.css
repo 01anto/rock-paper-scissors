@@ -250,8 +250,12 @@ footer > a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-    h1 {
+    h1, #modal-heading {
         font-size: 4rem;
+    }
+
+    #modal-message {
+        font-size: 3rem;
     }
 
     .controls-area > button {
@@ -269,4 +273,27 @@ footer > a:hover {
     img {
         width: 100%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    h1, #modal-heading {
+        font-size: 5rem;
+    }
+
+    #modal-message {
+        font-size: 4rem;
+    }
+
+    .controls-area > button {
+        font-size: 3rem;
+    }
+
+    .scores {
+        font-size: 3rem;
+    }
+
+    #messages {
+        font-size: 3rem;
+    }
+    
 }
