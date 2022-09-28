@@ -120,7 +120,7 @@ button:active {
 #score-two {
     margin-left: 0.5rem;
 }
-/**/
+/*styles for messages div (your move, nice, ouch, almost)*/
 #messages {
     font-size: 2rem;
     text-align: center;
@@ -130,7 +130,7 @@ button:active {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
-
+/*image container div*/
 .image-area {
     display: flex;
     flex-direction: column;
