@@ -10,6 +10,7 @@ const modal = document.getElementById("myModal");
 const heading = document.getElementById("modal-heading");
 const modalMessage = document.getElementById("modal-message");
 const span = document.getElementById("close");
+const isAudio = document.querySelector("#isAudio");
 
 // changes modal visibility to visible when called
 function openModal() {
@@ -56,7 +57,6 @@ function runGame(playerChoice) {
  calls an increment player or computer score function and an audio function if  
  isAudio is checked */
 function checkResult(resultOne, resultTwo) {
-    const isAudio = document.querySelector("#isAudio");
     console.log("is checked: ", isAudio.checked);
     if (resultOne === 'rock' && resultTwo === 'scissors'
     || resultOne === 'paper' && resultTwo === 'rock'
