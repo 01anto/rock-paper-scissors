@@ -83,7 +83,7 @@ button:active {
 .controls-area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 0.5rem;
 }
 
