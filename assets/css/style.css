@@ -152,5 +152,6 @@ img {
 
     .image-area {
         flex-direction: row;
+        justify-content: center;
     }
 }
