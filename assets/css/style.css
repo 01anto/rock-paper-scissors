@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*Modal background*/
 .modal {
     width: 100%;
@@ -15,6 +16,7 @@
     visibility: hidden;
     top: 0;
 }
+
 /*Main modal content*/
 .modal-content {
     width: 80%;
@@ -24,6 +26,7 @@
     border: 0.1875rem solid gold;
     border-radius: 0.3125rem;
 }
+
 /*modal close span*/
 #close {
     color: white;
@@ -34,11 +37,13 @@
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
+
 /*modal close span hover and active effects*/
 #close:hover, #close:active {
     color: orange;
     cursor: pointer;
 }
+
 /*Main website background colour*/
 body {
     background-color: rgb(81,117,162);
@@ -53,6 +58,7 @@ h1, #modal-heading {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
+
 /*All website button styles*/
 button {
     color: white;
@@ -79,6 +85,7 @@ button:active {
     text-shadow: none;
     box-shadow: none;
 }
+
 /*controls area container for rock, paper, scissors buttons*/
 .controls-area {
     display: flex;
@@ -86,6 +93,7 @@ button:active {
     justify-content: center;
     margin-top: 0.5rem;
 }
+
 /*Specific styles for rock, paper, scissors buttons */
 .controls-area > button {
     font-size: 1.5rem;
@@ -93,6 +101,7 @@ button:active {
     align-items: center;
 
 }
+
 /*score area container for player and computer scores*/
 .score-area {
     font-size: 2rem;
@@ -103,6 +112,7 @@ button:active {
     margin-top: 0.5rem;
     gap: 0.5rem;
 }
+
 /*player/computer score and modal message styling*/
 .scores, #modal-message {
     color: white;
@@ -112,14 +122,17 @@ button:active {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
+
 /*player score styles*/
 #score-one {
     margin-right: 0.5rem;
 }
+
 /*computer score styles*/
 #score-two {
     margin-left: 0.5rem;
 }
+
 /*styles for messages div (your move, nice, ouch, almost)*/
 #messages {
     font-size: 2rem;
@@ -130,6 +143,7 @@ button:active {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
+
 /*image container div*/
 .image-area {
     display: flex;
@@ -139,15 +153,18 @@ button:active {
     margin-top: 0.5rem;
 }
 
+/*image styles*/
 img {
     max-width: 76%;
     height: auto;
 }
 
+/*audio toggle switch container*/
 .switch-container {
     text-align: center;
 }
-/* All code related to the toggle switch was taken from https://www.w3schools.com/howto/howto_css_switch.asp */
+
+/* All code related to the audio toggle switch was taken from https://www.w3schools.com/howto/howto_css_switch.asp */
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -155,12 +172,14 @@ img {
     width: 45px;
     height: 25.5px;
   }
+
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
+
   /* The slider */
   .slider {
     position: absolute;
@@ -173,6 +192,7 @@ img {
     -webkit-transition: .4s;
     transition: .4s;
   }
+
   .slider:before {
     position: absolute;
     content: "";
@@ -184,25 +204,31 @@ img {
     -webkit-transition: .4s;
     transition: .4s;
   }
+
   input:checked + .slider {
     background-color: orange;
   }
+
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
+
   input:checked + .slider:before {
     -webkit-transform: translateX(19.5px);
     -ms-transform: translateX(19.5px);
     transform: translateX(19.5px);
   }
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 25.5px;
   }
+
   .slider.round:before {
     border-radius: 50%;
   }
 
+/*footer styling*/
 footer {
     margin-top: 5rem;
     text-align: center;
@@ -227,6 +253,7 @@ footer > a:hover {
     2px 4px 4px rgba(255,255,255,0.5);
 }
 
+/*media queries*/
 @media screen and (min-width: 425px) {
     .score-area {
         flex-direction: row;
