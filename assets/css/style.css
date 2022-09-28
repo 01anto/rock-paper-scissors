@@ -103,7 +103,7 @@ button:active {
     margin-top: 0.5rem;
     gap: 0.5rem;
 }
-/**/
+/*player/computer score and modal message styling*/
 .scores, #modal-message {
     color: white;
     text-align: center;
@@ -112,15 +112,15 @@ button:active {
     2px 3px rgba(0,0,0,0.5),
     2px 4px 4px rgba(0,0,0,0.5);
 }
-
+/*player score styles*/
 #score-one {
     margin-right: 0.5rem;
 }
-
+/*computer score styles*/
 #score-two {
     margin-left: 0.5rem;
 }
-
+/**/
 #messages {
     font-size: 2rem;
     text-align: center;
