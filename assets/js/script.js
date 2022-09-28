@@ -10,6 +10,7 @@ const modal = document.getElementById("myModal");
 const heading = document.getElementById("modal-heading");
 const modalMessage = document.getElementById("modal-message");
 const span = document.getElementById("close");
+const isAudio = document.querySelector("#isAudio");
 
 // changes modal visibility to visible when called
 function openModal() {
