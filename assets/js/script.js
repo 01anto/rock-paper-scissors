@@ -93,7 +93,9 @@ function playerWin(playerScore) {
     if (playerScore === 3) {
         heading.innerText = "You Win!";
         modalMessage.innerText = "Well Done";
-        audioWin();
+        if (isAudio.checked) {
+            audioWin();
+        }
         openModal();
     }
 }
@@ -102,7 +104,9 @@ function playerLose(computerScore) {
     if (computerScore === 3) {
         heading.innerText = "You Lose...";
         modalMessage.innerText = "Better luck next time";
-        audioLose();
+        if (isAudio.checked) {
+            audioLose();
+        }
         openModal();
     }
 }
