@@ -55,7 +55,6 @@ function runGame(playerChoice) {
  calls an increment player or computer score function and an audio function if  
  isAudio is checked */
 function checkResult(resultOne, resultTwo) {
-    console.log("is checked: ", isAudio.checked);
     if (resultOne === 'rock' && resultTwo === 'scissors'||
     resultOne === 'paper' && resultTwo === 'rock'||
     resultOne === 'scissors' && resultTwo === 'paper') {
