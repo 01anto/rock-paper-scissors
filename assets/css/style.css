@@ -107,7 +107,7 @@ button:active {
     gap: 0.5rem;
 }
 
-.scores {
+.scores, #modal-message {
     color: white;
     text-align: center;
     font-size: 2rem;
