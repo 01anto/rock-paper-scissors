@@ -148,6 +148,10 @@ img {
     justify-content: center;
     text-align: center;
 }
+
+.switch-container {
+    text-align: center;
+}
 /* All code related to the toggle switch was taken from https://www.w3schools.com/howto/howto_css_switch.asp */
 /* The switch - the box around the slider */
 .switch {
