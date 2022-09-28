@@ -66,9 +66,14 @@ function checkResult(resultOne, resultTwo) {
     || resultOne === 'scissors' && resultTwo === 'rock') {
         incrementComputerScore();
         messages.innerText = 'Ouch!';
+        if (isAudio.checked) {
+            audioIncorrect();
+        }
     } else {
         messages.innerText = 'Almost';
-        audioDraw();
+        if (isAudio.checked) {
+            audioDraw();
+        }
     }
 }
 // gets the players current score and increments it
@@ -81,7 +86,6 @@ function incrementPlayerScore() {
 function incrementComputerScore() {
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
-    audioIncorrect();
     playerLose(computerScore);
 }
 // if the players wins it changes modal content and calls the openModal function
