@@ -58,7 +58,7 @@ Live site link: https://01anto.github.io/rock-paper-scissors/
    - W3C HTML Validator - Passed
    - W3C CSS Jigsaw Validator - Passed
    - Lighthouse Results:
-   - ![Lighthouse Results]()
+   - ![Lighthouse Results](readme-extras/pp2-lighthouse.jpg)
    - jshint - passed
 
 
