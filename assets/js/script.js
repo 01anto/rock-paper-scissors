@@ -16,7 +16,7 @@ rules.onclick = function() {
     heading.innerText = "Rules";
     modalMessage.innerText = "Rock crushes Scissors, Paper covers Rock, Scissors cuts Paper";
     openModal();
-}
+};
 
 /** changes modal visibility to visible when called */
 function openModal() {
