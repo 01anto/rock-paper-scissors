@@ -11,19 +11,19 @@ const span = document.getElementById("close");
 const isAudio = document.querySelector("#isAudio");
 const rules = document.getElementById("rules");
 
-// Opens a rules model when the #rules paragraph is clicked.
+/** Opens a rules model when the #rules paragraph is clicked.*/
 rules.onclick = function() {
     heading.innerText = "Rules";
     modalMessage.innerText = "Rock crushes Scissors, Paper covers Rock, Scissors cuts Paper";
     openModal();
 }
 
-// changes modal visibility to visible when called
+/** changes modal visibility to visible when called */
 function openModal() {
     modal.style.visibility = "visible";
 }
 
-// changes modal visibility to hidden and reloads the page when user clicks on modal background
+/** changes modal visibility to hidden and reloads the page when user clicks on modal background */
 window.onclick = function(event) {
     if (event.target == modal) {
     modal.style.visibility = "hidden";
@@ -31,13 +31,13 @@ window.onclick = function(event) {
     }
 };
 
-// changes modal visibility to hidden and reloads the page when user clicks on modal close span
+/** changes modal visibility to hidden and reloads the page when user clicks on modal close span*/
 span.onclick = function() {
     modal.style.visibility = "hidden";
     window.location.reload();
 };
 
-//Button Event Listener
+/** Button Event Listener */
 for (let button of buttons) {
     button.addEventListener('click', function() {
         let playerChoice = this.getAttribute('data-index');
@@ -45,7 +45,7 @@ for (let button of buttons) {
     });
 }
 
-//Main Game Function
+/** run Game Function */
 function runGame(playerChoice) {
     playerImage.src = `assets/images/${choicesArray[playerChoice]}.jpg`;
     playerImage.alt = choicesArray[playerChoice];
@@ -59,7 +59,7 @@ function runGame(playerChoice) {
     checkResult(resultOne, resultTwo);
 }
 
-/* compares results to game rules, adjusts messages text accordingly,
+/** compares results to game rules, adjusts messages text accordingly,
  calls an increment player or computer score function and an audio function if  
  isAudio is checked */
 function checkResult(resultOne, resultTwo) {
@@ -87,22 +87,22 @@ function checkResult(resultOne, resultTwo) {
     }
 }
 
-// gets the players current score, increments it and passes it to playerWin Function
+/** gets the players current score, increments it and passes it to playerWin Function */
 function incrementPlayerScore() {
     let playerScore = parseInt(document.getElementById('player-score').innerText);
     document.getElementById("player-score").innerText = ++playerScore;
     playerWin(playerScore);
 }
 
-// gets the computers current score, increments it and passes it to computerWin function
+/** gets the computers current score, increments it and passes it to computerWin function */
 function incrementComputerScore() {
     let computerScore = parseInt(document.getElementById('computer-score').innerText);
     document.getElementById("computer-score").innerText = ++computerScore;
     playerLose(computerScore);
 }
 
-/* when player score reaches 3 this changes modal header and content, plays audio if checked,
- and calls the openModal function*/
+/** when player score reaches 3 this changes modal header and content, plays audio if checked,
+ and calls the openModal function */
 function playerWin(playerScore) {
     if (playerScore === 3) {
         heading.innerText = "You Win!";
@@ -114,8 +114,8 @@ function playerWin(playerScore) {
     }
 }
 
-/* when computer score reaches 3 this changes modal header and content, plays audio if checked,
- and calls the openModal function*/
+/** when computer score reaches 3 this changes modal header and content, plays audio if checked,
+ and calls the openModal function */
 function playerLose(computerScore) {
     if (computerScore === 3) {
         heading.innerText = "You Lose...";
@@ -128,35 +128,35 @@ function playerLose(computerScore) {
 }
 
 // All sound effects taken from https://pixabay.com/ro/sound-effects/ except for audioDraw(see below)
-// audio that is played when the player wins
+/** audio that is played when the player wins */
 function audioWin() {
     const audio = new Audio('assets/audio/win.mp3');
     audio.loop = false;
     audio.play();
 }
 
-// audio that is played when the players hand beats the computers hand
+/** audio that is played when the players hand beats the computers hand */
 function audioCorrect() {
     const audio = new Audio('assets/audio/correct.mp3');
     audio.loop = false;
     audio.play();
 }
 
-// audio that is played when the player loses
+/** audio that is played when the player loses */
 function audioLose() {
     const audio = new Audio('assets/audio/lose.mp3');
     audio.loop = false;
     audio.play();
 }
 
-// audio that is played when the computers hand beats the players hand
+/** audio that is played when the computers hand beats the players hand */
 function audioIncorrect() {
     const audio = new Audio('assets/audio/wrong.mp3');
     audio.loop = false;
     audio.play();
 }
 // This sound effect was taken from https://minecraft.fandom.com/wiki/Category:Sound_effects
-// audio that is played when the players hand and computers hand are the same (Draw)
+/** audio that is played when the players hand and computers hand are the same (Draw) */
 function audioDraw() {
     const audio = new Audio('assets/audio/draw.oga');
     audio.loop = false;
