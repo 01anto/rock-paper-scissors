@@ -222,6 +222,7 @@ img {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   }
 
   .slider:before {
@@ -241,7 +242,7 @@ img {
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   }
 
   input:checked + .slider:before {
