@@ -26,3 +26,43 @@ Live site link: https://01anto.github.io/rock-paper-scissors/
   ![paper](readme-extras/paper.jpg)
   ![scissors](readme-extras/scissors.jpg)
 
+  # Features
+
+  ## Controls
+
+  # Testing
+
+  ## Mobile testing
+
+   - The website was built from the start with mobile first design. It has been tested with
+     chrome dev tools on smaller screens and it is responsive.
+   - Once the website went live I accessed the website through various phones and ensured
+     that it performed as expected.
+
+  ## Desktop testing
+
+ - Large Monitor and TV
+
+   - The website has been tested with chrome dev tools for larger screens and it is
+     responsive.
+   - Once the website went live I accessed the website using a larger monitor and TV and
+     ensured that it performed as expected. One issue occuring with the TV is highlighted below in unfixed bugs.
+
+  ## Browser Testing
+
+   - Once the website went live it was run and tested on browsers and performs
+     as expected.
+
+  ## Validator Testing
+
+   - W3C HTML Validator - Passed
+   - W3C CSS Jigsaw Validator - Passed
+   - Lighthouse Results:
+   - ![Lighthouse Results]()
+   - jshint - passed
+
+
+
+
+
+
