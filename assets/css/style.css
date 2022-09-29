@@ -9,6 +9,16 @@
     display: inline;
 }
 
+#rules {
+    color: white;
+    display: inline;
+    background-color: orange;
+    border-radius: 3px;
+    border: 1px solid gold;
+    text-shadow: 1px 1px rgba(0,0,0,0.5),
+    1px 3px 4px rgba(0,0,0,0.5);
+}
+
 /*Modal background*/
 .modal {
     width: 100%;
