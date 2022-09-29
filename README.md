@@ -17,3 +17,12 @@ Live site link: https://01anto.github.io/rock-paper-scissors/
     - To know what the website is about the moment I see the website.
     - An easy to navigate website, no matter what device I use to access it.
     - For the game to be colourful and fun with some sound effects.
+
+# Design
+
+  ## Images
+  ![rock paper scissors](readme-extras/rock-paper-scissors.png)
+  ![rock](readme-extras/rock.jpg)
+  ![paper](readme-extras/paper.jpg)
+  ![scissors](readme-extras/scissors.jpg)
+
