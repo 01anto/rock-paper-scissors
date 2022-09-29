@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-#rules {
-    color: white;
-    display: inline;
-    background-color: darkorange;
-    border-radius: 3px;
-    border: 1px solid gold;
-    text-shadow: 1px 1px rgba(0,0,0,0.5),
-    1px 3px 4px rgba(0,0,0,0.5);
-}
-
-#rules:hover, #rules:active {
-    cursor: pointer;
-    background-color: orange;
-}
-
-#rules:active {
-    border: 1px solid black;
-    text-shadow: none;
-}
-
 /*Modal background*/
 .modal {
     width: 100%;
@@ -62,6 +42,26 @@
 #close:hover, #close:active {
     color: orange;
     cursor: pointer;
+}
+/*Styles for rules paragraph*/
+#rules {
+    color: white;
+    display: inline;
+    background-color: darkorange;
+    border-radius: 3px;
+    border: 1px solid gold;
+    text-shadow: 1px 1px rgba(0,0,0,0.5),
+    1px 3px 4px rgba(0,0,0,0.5);
+}
+
+#rules:hover, #rules:active {
+    cursor: pointer;
+    background-color: orange;
+}
+
+#rules:active {
+    border: 1px solid black;
+    text-shadow: none;
 }
 
 /*Main website background colour*/
