@@ -11,6 +11,13 @@ const span = document.getElementById("close");
 const isAudio = document.querySelector("#isAudio");
 const rules = document.getElementById("rules");
 
+// Opens a rules model when the #rules paragraph is clicked.
+rules.onclick = function() {
+    heading.innerText = "Rules";
+    modalMessage.innerText = "Rock crushes Scissors, Paper covers Rock, Scissors cuts Paper";
+    openModal();
+}
+
 // changes modal visibility to visible when called
 function openModal() {
     modal.style.visibility = "visible";
