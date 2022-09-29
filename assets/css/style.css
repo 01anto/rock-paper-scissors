@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-#toggle-name {
-    color: white;
-    display: inline;
-    text-shadow: 1px 1px rgba(0,0,0,0.5),
-    1px 3px 4px rgba(0,0,0,0.5);
-}
-
 #rules {
     color: white;
     display: inline;
@@ -191,6 +184,14 @@ img {
 /*audio toggle switch container*/
 .switch-container {
     text-align: center;
+}
+
+/*name for toggle switch*/
+#toggle-name {
+    color: white;
+    display: inline;
+    text-shadow: 1px 1px rgba(0,0,0,0.5),
+    1px 3px 4px rgba(0,0,0,0.5);
 }
 
 /* All code related to the audio toggle switch was taken from https://www.w3schools.com/howto/howto_css_switch.asp */
