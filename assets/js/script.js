@@ -127,6 +127,7 @@ function playerLose(computerScore) {
     }
 }
 
+// All sound effects taken from https://pixabay.com/ro/sound-effects/ except for audioDraw(see below)
 // audio that is played when the player wins
 function audioWin() {
     const audio = new Audio('assets/audio/win.mp3');
@@ -154,7 +155,7 @@ function audioIncorrect() {
     audio.loop = false;
     audio.play();
 }
-
+// This sound effect was taken from https://minecraft.fandom.com/wiki/Category:Sound_effects
 // audio that is played when the players hand and computers hand are the same (Draw)
 function audioDraw() {
     const audio = new Audio('assets/audio/draw.oga');
