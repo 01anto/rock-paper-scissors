@@ -45,6 +45,7 @@ for (let button of buttons) {
     });
 }
 
+//playerImage.src and computerImage.src origin before editing: https://www.bing.com/images/search?view=detailV2&ccid=as5zSfEA&id=15BBCF74BD081E3CAB771B8C026FB198A604AF51&thid=OIP.as5zSfEAyQdEMkBFxmZvNAHaGP&mediaurl=https%3a%2f%2fvectorified.com%2fimage%2frock-paper-scissors-vector-22.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6ace7349f100c90744324045c6666f34%3frik%3dUa8EppixbwKMGw%26pid%3dImgRaw%26r%3d0&exph=691&expw=820&q=Rock+Paper+Scissors+Drawing&simid=608035187682051565&FORM=IRPRST&ck=8DCCB665DED98D36687455CA3B5B6A58&selectedIndex=9&ajaxhist=0&ajaxserp=0-
 /** run Game Function */
 function runGame(playerChoice) {
     playerImage.src = `assets/images/${choicesArray[playerChoice]}.jpg`;
